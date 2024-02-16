@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>A-Frame Web Page</title>
+        <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+    </head>
+    <body>
+        <a-scene>
+            <!-- Black plane facing camera -->
+            <a-plane position="0 2 -4" rotation="0 0 0" width="6" height="4" color="#232325"></a-plane>
+            <!-- Red sphere -->
+            <a-sphere position="-1.569 3 -4" radius=".5" color="#db622a" material="" geometry="radius: 0.4" scale=""></a-sphere>
+
+            <!-- green semi-circle -->
+            <a-cylinder position="-1.569 2.44102 -4" color="#5e9056" material="" geometry="radius: 0.4; thetaLength: 180; thetaStart: -90" scale="1.73 1 1.73" rotation="90 0 0"></a-cylinder>
+            <!-- white pyramid -->
+            <a-cone position="-1.56925 1 -4" radius-bottom="" radius-top="0" height="1.5" color="#f1f1f1" rotation="0 45 0" segments-radial="4" material="" geometry="radiusBottom: 1"></a-cone>
+
+            <!-- white tall rectangle -->
+            <a-box position="-0.60482 1.35483 -4" width="1" height="2" depth="1" color="#f1f1f1" rotation="" material="" geometry="" scale="0.5 1.09167 1"></a-box>
+
+            <!-- yellow tall triangle -->
+            <a-cone position="0 2.04828 -4" radius-bottom="1" radius-top="0.5" height="3.6" color="#ffe87c" rotation="" segments-radial="4" material="" geometry="radiusTop: 0; thetaStart: 45" scale="0.5 1 0.73413"></a-cone>
+            
+            <!-- red tall triangle -->
+            <a-cone position="0.855 1 -4" radius-bottom="1" radius-top="0.5" height="1.5" color="#db622a" rotation="0 45 0" segments-radial="4" material="" geometry="radiusTop: 0" scale="0.7 1 0.7"></a-cone>
+            <!-- red sphere -->
+            <a-sphere position="0.855 2.45288 -4" radius=".5" color="#db622a" material="" geometry="radius: 0.4" scale="1 1 1"></a-sphere>
+
+            <!-- white sphere -->
+            <a-sphere position="0.855 3.41742 -4" radius=".6" color="#f1f1f1" material="" geometry="radius: 0.5" scale="1 1 1" rotation="1.389 0 0"></a-sphere>
+
+            <!-- green sphere -->
+            <a-sphere position="3 3 -4" radius="1" color="#5e9056" material="" geometry="phiLength: 180; phiStart: 270"></a-sphere>
+            <!-- white cylinder -->
+            <a-cylinder position="3 3 -4" radius="1" color="#f1f1f1" material="" geometry="thetaLength: 180; thetaStart: 180" rotation="90 0 0"></a-cylinder>
+            <!-- tall green triangle -->
+            <a-cone position="1.91516 1.24984 -4" radius="1" color="#5e9056" rotation="0 45 0" segments-radial="4" material="" geometry="height: 2" scale="0.8 1 0.8"></a-cone>        <!-- sky -->
+            <a-sky color="#edece5"></a-sky>
+        </a-scene>
+    </body>
+</html>
